@@ -1,0 +1,54 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/roboto */
+@import "http://fonts.fontstorage.com/import/roboto.css";
+/*
+	Roboto, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
+*/
+
+//MyriadProRegular
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+//Averta-Regular
+
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url('../fonts/Averta-Regular/Averta-Regular.woff') format('woff'),
+  url('../fonts/Averta-Regular/Averta-Regular.ttf') format('truetype'),
+  url('../fonts/Averta-Regular/Averta-Regular.svg#Averta-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Averta-Bold
+
+@font-face {
+  font-family: 'Averta-Bold';
+  src: url('../fonts/Averta-Bold/Averta-Bold.eot');
+  src: url('../fonts/Averta-Bold/Averta-Bold.woff2') format('woff2'),
+  url('../fonts/Averta-Bold/Averta-Bold.woff') format('woff'),
+  url('../fonts/Averta-Bold/Averta-Bold.ttf') format('truetype'),
+  url('../fonts/Averta-Bold/Averta-Bold.svg#Averta-Bold') format('svg'),
+  url('../fonts/Averta-Bold/Averta-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta-Semibold';
+  src: url('../fonts/Averta-Semibold/Averta-Semibold.eot');
+  src: url('../fonts/Averta-Semibold/Averta-Semibold.woff2') format('woff2'),
+  url('../fonts/Averta-Semibold/Averta-Semibold.woff') format('woff'),
+  url('../fonts/Averta-Semibold/Averta-Semibold.ttf') format('truetype'),
+  url('../fonts/Averta-Semibold/Averta-Semibold.svg#Averta-Semibold') format('svg'),
+  url('../fonts/Averta-Semibold/Averta-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
