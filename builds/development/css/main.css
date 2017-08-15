@@ -184,7 +184,16 @@ a.disabled {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 250; }
+    z-index: 250;
+    /*&__search{
+      float: left;
+      display: block;
+      padding: 46px 5px 0 50px;
+      max-width: 420px;
+      width: 25vw;
+      position: fixed;
+      left: 280px;
+    }*/ }
     .right-content .header__navigation {
       display: inline-block;
       float: right;
@@ -245,13 +254,15 @@ a.disabled {
           width: 33px;
           height: 33px; }
       .right-content .header__navigation .user:hover .user__name {
-        color: #5ea6ce; }
+        color: #5ea6ce;
+        transition: all 0.5s; }
       .right-content .header__navigation .user:hover .user__photo {
-        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2); }
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.5s; }
   .right-content .offers {
     width: 100%;
     height: auto;
-    padding: 170px 40px;
+    padding: 170px 50px;
     position: relative; }
     .right-content .offers .heading {
       color: black;
@@ -261,38 +272,85 @@ a.disabled {
       line-height: 24px;
       text-transform: uppercase;
       position: relative;
-      margin-bottom: 35px;
-      padding-left: 10px; }
+      margin-bottom: 35px; }
       .right-content .offers .heading:before {
         content: '';
         position: absolute;
         top: 35px;
-        left: 10px;
+        left: 0;
         width: 36px;
         height: 2px;
         background-color: #5ea6ce; }
+    .right-content .offers__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -10px;
+      margin-left: -10px;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
     .right-content .offers__card {
-      display: inline-block;
-      vertical-align: top;
       width: 420px;
-      height: auto;
-      min-height: 193px;
-      max-height: 193px;
-      border-radius: 5px;
-      border: 1px solid #ebebeb;
-      background-color: white;
-      margin: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-align-items: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+      padding: 10px;
       position: relative;
-      padding: 28px 24px;
-      cursor: pointer;
-      transition: all 0.5s; }
-      .right-content .offers__card-title {
+      cursor: pointer; }
+    .right-content .offers .card {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 23px 23px 19px; }
+      .right-content .offers .card .evaluation {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 32px;
+        height: 32px;
+        z-index: 50; }
+        .right-content .offers .card .evaluation-bad {
+          background: url("../img/icon-bad.png") 0 0 no-repeat; }
+        .right-content .offers .card .evaluation-ok {
+          background: url("../img/icon-ok.png") 0 0 no-repeat; }
+      .right-content .offers .card__title {
         color: black;
         font-family: "MyriadProRegular", sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 24px; }
-      .right-content .offers__card-price {
+      .right-content .offers .card__price {
         color: rgba(0, 0, 0, 0.66);
         font-family: "Averta-Regular", sans-serif;
         font-size: 12px;
@@ -300,127 +358,184 @@ a.disabled {
         line-height: 24px;
         text-transform: uppercase;
         margin-bottom: 18px; }
-      .right-content .offers__card-content {
+      .right-content .offers .card__content {
         color: black;
         font-family: "MyriadProRegular", sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
-        overflow-y: auto;
-        height: 90px; }
-      .right-content .offers__card .evaluation {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 32px;
-        height: 32px; }
-        .right-content .offers__card .evaluation-bad {
-          background: url("../img/icon-bad.png") 0 0 no-repeat; }
-        .right-content .offers__card .evaluation-ok {
-          background: url("../img/icon-ok.png") 0 0 no-repeat; }
-    .right-content .offers .popup {
-      display: none;
-      width: 544px;
-      height: 290px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px; }
+    .right-content .offers .card-overlay {
+      display: block;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      color: white;
+      background-color: white;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      padding: 24px 24px 20px;
       border-radius: 5px;
-      background-color: #5ea6ce;
+      box-shadow: none;
+      z-index: 10;
       overflow: hidden;
-      transition: all 0.5s; }
-      .right-content .offers .popup__inform {
-        display: inline-block;
-        max-width: 444px;
-        padding: 38px 23px;
-        position: relative; }
-        .right-content .offers .popup__inform-rating {
-          position: absolute;
-          top: 40px;
-          right: 15px; }
-          .right-content .offers .popup__inform-rating a {
-            text-decoration: none;
-            width: 16px;
-            height: 15px;
-            margin-right: 10px;
-            color: rgba(255, 255, 255, 0.66); }
-          .right-content .offers .popup__inform-rating .like-active, .right-content .offers .popup__inform-rating .like:hover {
-            color: white; }
-        .right-content .offers .popup__inform-title {
-          color: white;
-          font-family: "MyriadProRegular", sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 24px; }
-        .right-content .offers .popup__inform-price {
-          color: rgba(255, 255, 255, 0.66);
-          font-family: "Averta-Regular", sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 24px;
-          text-transform: uppercase;
-          margin-bottom: 18px; }
-        .right-content .offers .popup__inform-message {
-          color: white;
-          font-family: "MyriadProRegular", sans-serif;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18px;
-          margin-bottom: 25px; }
-        .right-content .offers .popup__inform .views, .right-content .offers .popup__inform .contract, .right-content .offers .popup__inform .name {
-          color: rgba(255, 255, 255, 0.66);
-          font-family: "Averta-Regular", sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 24px;
-          margin-right: 20px;
-          transition: all 0.5s; }
-          .right-content .offers .popup__inform .views .fa-eye, .right-content .offers .popup__inform .views .fa-folder, .right-content .offers .popup__inform .views .fa-user, .right-content .offers .popup__inform .contract .fa-eye, .right-content .offers .popup__inform .contract .fa-folder, .right-content .offers .popup__inform .contract .fa-user, .right-content .offers .popup__inform .name .fa-eye, .right-content .offers .popup__inform .name .fa-folder, .right-content .offers .popup__inform .name .fa-user {
-            margin-right: 10px; }
-          .right-content .offers .popup__inform .views:hover, .right-content .offers .popup__inform .contract:hover, .right-content .offers .popup__inform .name:hover {
-            color: white; }
-        .right-content .offers .popup__inform .today {
-          display: block;
-          color: rgba(255, 255, 255, 0.66);
-          font-family: "Averta-Regular", sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 24px;
-          margin-right: 20px;
-          transition: all 0.5s; }
-          .right-content .offers .popup__inform .today .fa-calendar {
-            margin-right: 10px; }
-          .right-content .offers .popup__inform .today:hover {
-            color: white; }
-      .right-content .offers .popup__select {
-        display: inline-block;
-        vertical-align: middle;
-        text-decoration: none;
+      transition: background-color .1s, top .1s, right .1s, bottom .1s, left .1s, padding .1s, visibility .2s, opacity .2s, z-index .2s; }
+      .right-content .offers .card-overlay__rating {
+        position: absolute;
+        top: 30px;
+        right: 115px;
+        display: block; }
+        .right-content .offers .card-overlay__rating a {
+          text-decoration: none;
+          width: 16px;
+          height: 15px;
+          margin-right: 10px;
+          color: rgba(255, 255, 255, 0.66); }
+        .right-content .offers .card-overlay__rating .like-active, .right-content .offers .card-overlay__rating .like:hover {
+          color: white; }
+      .right-content .offers .card-overlay__title {
+        color: white;
+        font-family: "MyriadProRegular", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px; }
+      .right-content .offers .card-overlay__price {
+        color: rgba(255, 255, 255, 0.66);
+        font-family: "Averta-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 18px; }
+      .right-content .offers .card-overlay__content {
+        color: white;
+        font-family: "MyriadProRegular", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 20px; }
+      .right-content .offers .card-overlay__controls .views, .right-content .offers .card-overlay__controls .contract, .right-content .offers .card-overlay__controls .name {
+        color: rgba(255, 255, 255, 0.66);
+        font-family: "Averta-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-right: 20px;
+        transition: all 0.5s; }
+        .right-content .offers .card-overlay__controls .views .fa-eye, .right-content .offers .card-overlay__controls .views .fa-folder, .right-content .offers .card-overlay__controls .views .fa-user, .right-content .offers .card-overlay__controls .contract .fa-eye, .right-content .offers .card-overlay__controls .contract .fa-folder, .right-content .offers .card-overlay__controls .contract .fa-user, .right-content .offers .card-overlay__controls .name .fa-eye, .right-content .offers .card-overlay__controls .name .fa-folder, .right-content .offers .card-overlay__controls .name .fa-user {
+          margin-right: 10px; }
+        .right-content .offers .card-overlay__controls .views:hover, .right-content .offers .card-overlay__controls .contract:hover, .right-content .offers .card-overlay__controls .name:hover {
+          color: white; }
+      .right-content .offers .card-overlay__controls .today {
+        display: block;
+        color: rgba(255, 255, 255, 0.66);
+        font-family: "Averta-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-right: 20px;
+        transition: all 0.5s; }
+        .right-content .offers .card-overlay__controls .today .fa-calendar {
+          margin-right: 10px; }
+        .right-content .offers .card-overlay__controls .today:hover {
+          color: white; }
+      .right-content .offers .card-overlay__select {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
         width: 100px;
-        height: 290px;
         background-color: rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        float: right;
-        position: relative;
         cursor: pointer; }
-        .right-content .offers .popup__select img {
+        .right-content .offers .card-overlay__select img {
           display: block;
           position: absolute;
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
           left: 50%;
           top: 50%; }
-        .right-content .offers .popup__select:hover img {
-          left: 52%;
+        .right-content .offers .card-overlay__select:hover img {
+          left: 53%;
           transition: all 0.5s; }
-    .right-content .offers__card:hover .popup {
-      display: block;
-      position: absolute;
-      top: -30px;
+    .right-content .offers__card .card:hover .card-overlay {
+      bottom: auto;
+      min-height: calc(100% + 20px);
+      visibility: visible;
+      opacity: 1;
+      background-color: #5ea6ce;
+      max-height: 1000px;
+      top: -10px;
+      right: -110px;
       left: -10px;
-      z-index: 245;
-      width: 544px;
-      transition: all 0.5s; }
+      padding: 33px 133px 29px 33px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      z-index: 200;
+      transition: background-color .2s, top .2s, right .2s, bottom .2s, left .2s, padding .2s, visibility .1s, opacity .1s, z-index .1s; }
+    .right-content .offers .pagination__container {
+      display: block;
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      margin-top: 50px; }
+      .right-content .offers .pagination__container .prev, .right-content .offers .pagination__container .next {
+        color: #acacac;
+        font-family: "Averta-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle; }
+        .right-content .offers .pagination__container .prev:hover, .right-content .offers .pagination__container .next:hover {
+          text-decoration: none;
+          color: #5ea6ce; }
+        .right-content .offers .pagination__container .prev .fa-arrow-left:before, .right-content .offers .pagination__container .next .fa-arrow-left:before {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 5px; }
+        .right-content .offers .pagination__container .prev .fa-arrow-right:before, .right-content .offers .pagination__container .next .fa-arrow-right:before {
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 5px; }
+      .right-content .offers .pagination__container .prev {
+        float: left; }
+      .right-content .offers .pagination__container .next {
+        float: right; }
+      .right-content .offers .pagination__container .pagination {
+        list-style: none;
+        display: inline-block;
+        padding: 0; }
+        .right-content .offers .pagination__container .pagination li {
+          display: inline;
+          text-align: center; }
+          .right-content .offers .pagination__container .pagination li a {
+            float: left;
+            display: block;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0 5px;
+            color: #acacac;
+            margin: 0 2px;
+            line-height: 1.5; }
+            .right-content .offers .pagination__container .pagination li a.active, .right-content .offers .pagination__container .pagination li a:hover {
+              cursor: pointer;
+              outline: none;
+              color: #5ea6ce; }
 
 aside.left-sidebar {
   display: inline-block;
@@ -556,14 +671,16 @@ aside.left-sidebar {
     aside.left-sidebar .filter ul .user {
       display: block;
       margin-bottom: 15px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.5s; }
       aside.left-sidebar .filter ul .user__photo {
         display: inline-block;
         vertical-align: middle;
         margin-right: 15px;
         width: 36px;
         height: 36px;
-        border-radius: 50%; }
+        border-radius: 50%;
+        transition: all 0.5s; }
       aside.left-sidebar .filter ul .user__name {
         display: inline-block;
         vertical-align: middle;
@@ -582,9 +699,11 @@ aside.left-sidebar {
           font-weight: 400;
           line-height: 18px; }
       aside.left-sidebar .filter ul .user:hover .user__name {
-        color: #5ea6ce; }
+        color: #5ea6ce;
+        transition: all 0.5s; }
       aside.left-sidebar .filter ul .user:hover .user__photo {
-        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2); }
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.5s; }
     aside.left-sidebar .filter .view-all {
       display: block;
       color: #5ea6ce;
@@ -599,3 +718,34 @@ aside.left-sidebar {
         margin-left: 10px; }
       aside.left-sidebar .filter .view-all:hover {
         color: #286384; }
+
+.form-search {
+  width: 100%;
+  max-width: 365px;
+  height: auto;
+  position: relative; }
+
+input[name='search'] {
+  display: block;
+  width: 100%;
+  max-width: 335px;
+  height: 28px;
+  line-height: 28px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0 25px 0 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Averta-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+input[type='submit'] {
+  position: absolute;
+  display: block;
+  top: 4px;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url("../img/ic-search.png") no-repeat; }

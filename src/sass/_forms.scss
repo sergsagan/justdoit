@@ -1,0 +1,31 @@
+.form-search {
+  width: 100%;
+  max-width: 365px;
+  height: auto;
+  position: relative;
+}
+input[name='search'] {
+  display: block;
+  width: 100%;
+  max-width: 335px;
+  height: 28px;
+  line-height: 28px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0 25px 0 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: $Averta;
+  font-size: 14px;
+  font-weight: 400;
+}
+input[type='submit'] {
+  position: absolute;
+  display: block;
+  top: 4px;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url("../img/ic-search.png") no-repeat;
+}

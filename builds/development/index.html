@@ -173,6 +173,12 @@
     </aside><!--end-left-sidebar-->
     <section class="right-content">
         <header class="header">
+            <!--<div class="header__search">
+                <form class="form-search">
+                    <input name="search" type="search" id="search" value="Search..." placeholder="" required="" onblur="if(this.value=='') this.value='Search...';" onfocus="if(this.value=='Search...') this.value='';">
+                    <input type="submit" name="sub-search" value="">
+                </form>
+            </div>-->
             <div class="header__navigation">
                 <ul class="flex menu">
                     <li class="active"><a href="#">Home</a></li>
@@ -191,486 +197,586 @@
         </header>
         <div class="offers">
             <div class="heading">Offers</div>
-            <div class="offers__card">
-                <span class="evaluation evaluation-bad"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+
+            <div class="offers__container">
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-bad"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, odit?
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, assumenda?
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation evaluation-bad"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation evaluation-ok"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup--->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-card-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
                     </div>
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation evaluation-ok"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation evaluation-bad"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-bad"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
-            </div><!--end-offers-card-->
-            <div class="offers__card">
-                <span class="evaluation evaluation-bad"></span>
-                <div class="offers__card-title">Write a slimple web application</div>
-                <div class="offers__card-price">1.350 USD</div>
-                <div class="offers__card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </div>
-                <div class="popup">
-                    <div class="popup__inform">
-                        <div class="popup__inform-rating">
-                            <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
                         </div>
-                        <div class="popup__inform-title">Write a slimple web application</div>
-                        <div class="popup__inform-price">1.350 USD</div>
-                        <div class="popup__inform-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                        <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
-                        <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
-                        <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
-                        <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
-                    </div><!--end-popup-inform-->
-                    <a href="#" class="popup__select"><img src="img/arrow-forward.png" alt="arrow"></a>
-                </div><!--end-popup-->
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-ok"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam commodi consequuntur delectus dolores laborum!
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi distinctio, neque placeat provident sunt.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-ok"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-bad"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                            </div>
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
+                <div class="offers__card">
+                    <div class="card">
+                        <span class="evaluation evaluation-bad"></span>
+                        <div class="card__title">Write a slimple web application</div>
+                        <div class="card__price">1.350 USD</div>
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay__rating">
+                                <a href="#" class="like"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                <a href="#" class="like like-active"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="card-overlay__title">Write a slimple web application</div>
+                            <div class="card-overlay__price">1.350 USD</div>
+                            <div class="card-overlay__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            <div class="card-overlay__controls">
+                                <span class="views"><i class="fa fa-eye" aria-hidden="true"></i>58 Views</span>
+                                <span class="contract"><i class="fa fa-folder" aria-hidden="true"></i>Contract</span>
+                                <span class="name"><i class="fa fa-user" aria-hidden="true"></i>Johnatan Doe</span>
+                                <span class="today"><i class="fa fa-calendar" aria-hidden="true"></i>25 Mar. 2017 - 10:09</span>
+                            </div>
+                            <a href="#" class="card-overlay__select"><img src="img/arrow-forward.png" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div><!--end-offers-card-->
             </div><!--end-offers-card-->
+            </div>
+            <div class="pagination__container">
+                <a href="#" class="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i><span>PREV</span></a>
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#" class="active">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">248</a></li>
+                </ul>
+                <a href="#" class="next"><span>NEXT</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
         </div><!--end-offers-->
     </section><!--end-right-content-->
 </div>

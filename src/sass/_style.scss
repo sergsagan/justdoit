@@ -48,13 +48,23 @@
 
   .header{
     width: calc( 100% - 279px);
-    margin-left: 279px;
+   margin-left: 279px;
     height: 120px;
     background-color: rgb(250, 250, 250);
     position: fixed;
     top: 0;
     right: 0;
     z-index: 250;
+
+    /*&__search{
+      float: left;
+      display: block;
+      padding: 46px 5px 0 50px;
+      max-width: 420px;
+      width: 25vw;
+      position: fixed;
+      left: 280px;
+    }*/
 
     &__navigation{
       display: inline-block;
@@ -142,11 +152,14 @@
         }
       }
       .user:hover{
+
         .user__name{
           color: $stack-color;
+          @include transition(all .5s);
         }
         .user__photo{
           @include box-shadow(5px 5px 20px 0 rgba(0, 0, 0, 0.2));
+          @include transition(all .5s);
         }
       }
     }
@@ -155,7 +168,7 @@
   .offers{
     width: 100%;
     height: auto;
-    padding: 170px 40px;
+    padding: 170px 50px;
     position: relative;
 
     .heading{
@@ -167,60 +180,71 @@
       text-transform: uppercase;
       position: relative;
       margin-bottom: 35px;
-      padding-left: 10px;
 
       &:before{
         content: '';
         position: absolute;
         top: 35px;
-        left: 10px;
+        left: 0;
         width: 36px;
         height: 2px;
         background-color: $stack-color;
       }
     }
 
-    &__card {
-      display: inline-block;
-      vertical-align: top;
-      width: 420px;
-      height: auto;
-      min-height: 193px;
-      max-height: 193px;
-      border-radius: 5px;
-      border: 1px solid rgb(235, 235, 235);
-      background-color: rgb(255, 255, 255);
-      margin: 10px;
-      position: relative;
-      padding: 28px 24px;
-      cursor: pointer;
-      @include transition(all .5s);
+    &__container{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -10px;
+      margin-left: -10px;
+      align-items: stretch;
+      -webkit-align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
 
-      &-title {
-        color: rgb(0, 0, 0);
-        font-family: $Myriad;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-      &-price {
-        color: rgba(0, 0, 0, 0.66);
-        font-family: $Averta;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 24px;
-        text-transform: uppercase;
-        margin-bottom: 18px;
-      }
-      &-content {
-        color: rgb(0, 0, 0);
-        font-family: $Myriad;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        overflow-y: auto;
-        height: 90px;
-      }
+    &__card{
+      width: 420px;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-align-items: stretch;
+      align-content: stretch;
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+
+    }
+
+    .card{
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 23px 23px 19px;
 
       .evaluation{
         display: block;
@@ -230,6 +254,7 @@
         right: 15px;
         width: 32px;
         height: 32px;
+        z-index: 50;
 
         &-bad {
           background: url("../img/icon-bad.png") 0 0 no-repeat;
@@ -239,65 +264,105 @@
           background: url("../img/icon-ok.png") 0 0 no-repeat;
         }
       }
+
+      &__title {
+        color: rgb(0, 0, 0);
+        font-family: $Myriad;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &__price {
+        color: rgba(0, 0, 0, 0.66);
+        font-family: $Averta;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+      &__content {
+        color: rgb(0, 0, 0);
+        font-family: $Myriad;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
     }
-    .popup{
-      display:none;
-      width: 544px;
-      height: 290px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+    .card-overlay {
+      display: block;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      align-content: stretch;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      color: white;
+      background-color: white;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      padding: 24px 24px 20px;
       border-radius: 5px;
-      background-color: $stack-color;
+      box-shadow: none;
+      z-index: 10;
       overflow: hidden;
-      @include transition(all .5s);
+      transition: background-color .1s, top .1s, right .1s, bottom .1s, left .1s, padding .1s, visibility .2s, opacity .2s, z-index .2s;
 
-      &__inform{
-        display: inline-block;
-        max-width: 444px;
-        padding: 38px 23px;
-        position: relative;
+      &__rating{
+        position: absolute;
+        top: 30px;
+        right: 115px;
+        display: block;
 
-        &-rating{
-          position: absolute;
-          top: 40px;
-          right: 15px;
-
-          a{
-            text-decoration: none;
-            width: 16px;
-            height: 15px;
-            margin-right: 10px;
-            color: rgba(255, 255, 255, 0.66);
-
-          }
-          .like-active, .like:hover{
-            color: rgba(255, 255, 255, 1);
-          }
-        }
-
-        &-title{
-          color: rgb(255, 255, 255);
-          font-family: $Myriad;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 24px;
-        }
-        &-price{
+        a{
+          text-decoration: none;
+          width: 16px;
+          height: 15px;
+          margin-right: 10px;
           color: rgba(255, 255, 255, 0.66);
-          font-family: $Averta;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 24px;
-          text-transform: uppercase;
-          margin-bottom: 18px;
         }
-        &-message{
-          color: rgb(255, 255, 255);
-          font-family: $Myriad;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18px;
-          margin-bottom: 25px;
+        .like-active, .like:hover{
+          color: rgba(255, 255, 255, 1);
         }
+      }
+
+      &__title {
+        color: rgb(255, 255, 255);
+        font-family: $Myriad;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &__price {
+        color: rgba(255, 255, 255, 0.66);
+        font-family: $Averta;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+      &__content {
+        color: rgb(255, 255, 255);
+        font-family: $Myriad;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+      &__controls{
         .views, .contract, .name{
           color: rgba(255, 255, 255, 0.66);
           font-family: $Averta;
@@ -337,15 +402,12 @@
       }
 
       &__select{
-        display: inline-block;
-        vertical-align: middle;
-        text-decoration: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
         width: 100px;
-        height: 290px;
-        background-color: rgba(0,0,0,0.1);
-        z-index: 100;
-        float: right;
-        position: relative;
+        background-color: rgba(0, 0, 0, 0.1);
         cursor: pointer;
 
         img{
@@ -358,21 +420,96 @@
 
         &:hover{
           img{
-            left: 52%;
+            left: 53%;
             @include transition(all .5s);
           }
         }
       }
     }
 
-    &__card:hover .popup{
-      display: block;
-      position:absolute;
-      top:-30px;
+    &__card .card:hover .card-overlay {
+      bottom: auto;
+      min-height: calc(100% + 20px);
+      visibility: visible;
+      opacity: 1;
+      background-color: $stack-color;
+      max-height: 1000px;
+      top: -10px;
+      right: -110px;
       left: -10px;
-      z-index:245;
-      width: 544px;
-      @include transition(all .5s);
+      padding: 33px 133px 29px 33px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      z-index: 200;
+      transition: background-color .2s, top .2s, right .2s, bottom .2s, left .2s, padding .2s, visibility .1s, opacity .1s, z-index .1s;
+    }
+
+    .pagination__container{
+      display: block;
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      margin-top: 50px;
+
+      .prev, .next{
+        color: rgb(172, 172, 172);
+        font-family: $Averta;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+
+        &:hover{
+          text-decoration: none;
+          color: $stack-color;
+        }
+
+        .fa-arrow-left:before {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 5px;
+        }
+        .fa-arrow-right:before {
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 5px;
+        }
+      }
+      .prev{
+        float: left;
+      }
+      .next{
+        float: right;
+      }
+      .pagination{
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+
+        li{
+          display: inline;
+          text-align: center;
+
+          a{
+            float: left;
+            display: block;
+            font-size: 12px;
+            font-family: $Roboto;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0 5px;
+            color: rgb(172, 172, 172);
+            margin: 0 2px;
+            line-height: 1.5;
+
+            &.active, &:hover{
+              cursor: pointer;
+              outline: none;
+              color: $stack-color;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -546,6 +683,7 @@ aside.left-sidebar{
         display: block;
         margin-bottom: 15px;
         cursor: pointer;
+        @include transition(all .5s);
 
         &__photo{
           display: inline-block;
@@ -554,6 +692,7 @@ aside.left-sidebar{
           width: 36px;
           height: 36px;
           border-radius: 50%;
+          @include transition(all .5s);
         }
 
         &__name{
@@ -580,9 +719,11 @@ aside.left-sidebar{
         &:hover{
           .user__name{
             color: $stack-color;
+            @include transition(all .5s);
           }
           .user__photo{
             @include box-shadow(5px 5px 20px 0 rgba(0, 0, 0, 0.2));
+            @include transition(all .5s);
           }
         }
       }
